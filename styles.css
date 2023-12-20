@@ -1,5 +1,12 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    margin: auto;
+    background-color: #fefff8;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
       "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
       sans-serif;
@@ -8,25 +15,106 @@ body {
   }
   
   code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-      monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
   }
-  
+
+.header {
+    width: 100%;
+    background: url(./assets/main-pic1.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+    padding: 60px;
+    font-size: 60px;
+    color: #fefff8;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    font-size: 15px;
+    margin-top: 75px;
+}
+
+#search {
+    flex: 1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.input-field {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #346076;
+}
+
+input:focus {
+    outline: none;
+  }
+
+.btn {
+    border-radius: 4px;
+    padding: 9.5px 15px;
+    color: #346076;
+    background: #fefff8;
+    margin-left: 90px;
+    transition: 0.5s ease-in-out;
+}
+
+.btn:hover {
+    background: #346076;
+    color: #fff;
+}
+
 .container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    margin: 70px auto;
+    max-width: 1300px;
 }
 
 .cocktail {
     display: flex;
     flex-direction: column;
-    margin: 10px;
-    padding: 20px;
+    margin: 5px;
+    padding: 12px;
     border-radius: 7px;
     transition: 0.55s ease-in-out;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    margin-right: auto;
+    background-color: #fefff8;
 }
 
 .cocktail:hover {
     transform: translateY(-20px);
+}
+
+a {
+    font-size: 20px;
+    color: #346076;
+    text-decoration: none;
+}
+
+.footer-text {
+    border-top: 1px solid #346076;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #346076;
 }
