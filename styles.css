@@ -53,6 +53,10 @@ input:focus {
     outline: none;
   }
 
+  input::placeholder {
+    text-align: center;
+  }
+
 .container {
     display: flex;
     justify-content: center;
